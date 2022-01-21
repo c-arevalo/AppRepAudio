@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mp = MediaPlayer.create(this,R.raw.audio);*/
+        mp = MediaPlayer.create(this,R.raw.audio);
         t = (TextView) findViewById(R.id.tvMensaje);
         /*p = findViewById(R.id.progressBar1);*/
     }
