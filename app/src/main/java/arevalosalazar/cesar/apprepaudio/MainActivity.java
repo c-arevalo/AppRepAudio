@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mp;
     TextView t;
 
-    ProgressBar p;
+    /*ProgressBar p;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mp = MediaPlayer.create(this,R.raw.audio);
+        mp = MediaPlayer.create(this,R.raw.audio);*/
         t = (TextView) findViewById(R.id.tvMensaje);
-        p = findViewById(R.id.progressBar1);
+        /*p = findViewById(R.id.progressBar1);*/
     }
 
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         lanzarSonido l = new lanzarSonido(t);
         l.execute();
         l.onPostExecute(t);
-        p.setProgress(mp.getCurrentPosition());
+        /*p.setProgress(mp.getCurrentPosition());*/
 
     }
     public void PlayFromPausa(View v){
