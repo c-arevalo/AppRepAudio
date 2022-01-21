@@ -33,14 +33,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        lanzarSonido l = new lanzarSonido(t);
+        /*lanzarSonido l = new lanzarSonido(t);
         l.execute();
         l.onPostExecute(t);
-        /*p.setProgress(mp.getCurrentPosition());*/
+        p.setProgress(mp.getCurrentPosition());*/
 
     }
     public void PlayFromPausa(View v){
         mp.start();
+
     }
 
     public void parar (View v){
